@@ -17,7 +17,7 @@ const useStyles = makeStyles()({
   root: {
     display: 'grid',
     width: '100%',
-    gridTemplateRows: 'auto auto 300px 300px',
+    gridTemplateRows: 'auto 300px 300px',
     gridRowGap: 100,
   },
   largeDataset: {
@@ -81,7 +81,6 @@ export const Main = () => {
 
   return (
     <div className={rootClasses}>
-      <Typography variant={'h2'}>{`react-svg-timeline v${import.meta.env.VITE_APP_VERSION}`}</Typography>
       <ConfigPanel
         laneDisplayMode={laneDisplayMode}
         setLaneDisplayMode={setLaneDisplayMode}

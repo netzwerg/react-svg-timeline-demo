@@ -2,13 +2,19 @@ import React from 'react'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import { ThemeSwitch } from '../../theme'
+import { Typography } from '@mui/material'
 import { makeStyles } from '../../utils'
 import { Main } from './Main'
 
 const useStyles = makeStyles()((theme) => ({
   toolbar: {
     display: 'grid',
-    justifyItems: 'end',
+    gridTemplateColumns: 'auto auto',
+    justifyContent: 'space-between',
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: theme.spacing(1),
+      paddingRight: theme.spacing(1),
+    },
   },
   title: {
     [theme.breakpoints.down('md')]: {
@@ -22,12 +28,8 @@ const useStyles = makeStyles()((theme) => ({
     gridTemplateRows: 'auto 1fr',
     gridRowGap: 8,
     paddingTop: 100,
-    paddingLeft: '2vw',
-    paddingRight: '2vw',
-    [theme.breakpoints.down('md')]: {
-      paddingLeft: theme.spacing(1),
-      paddingRight: theme.spacing(1),
-    },
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
   },
 }))
 
@@ -37,6 +39,9 @@ export const App = () => {
     <>
       <AppBar>
         <Toolbar className={classes.toolbar}>
+          <Typography className={classes.title} noWrap>{`react-svg-timeline – v${
+            import.meta.env.VITE_APP_VERSION
+          }`}</Typography>
           <ThemeSwitch />
         </Toolbar>
       </AppBar>
