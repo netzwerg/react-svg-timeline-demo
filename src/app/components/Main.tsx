@@ -9,7 +9,7 @@ import Dataset2 from '../data/largeDataset.json'
 import { Card, InputLabel, MenuItem, Select, Switch, Typography, useTheme } from '@mui/material'
 import { CustomizedTimeline } from '../../timeline/components/CustomizedTimeline'
 import { ExampleEvent, ExampleProps, TimelineEventId, TimelineLaneId } from '../../timeline/model'
-import { createTimelineTheme, LaneDisplayMode, Timeline, TimelineProps } from 'react-svg-timeline'
+import { createTimelineTheme, LaneDisplayMode, Timeline, TimelineLayer, TimelineProps } from 'react-svg-timeline'
 import { makeStyles } from '../../utils'
 import AutoSizer, { Size } from 'react-virtualized-auto-sizer'
 
@@ -17,7 +17,7 @@ const useStyles = makeStyles()({
   root: {
     display: 'grid',
     width: '100%',
-    gridTemplateRows: 'auto 300px 300px',
+    gridTemplateRows: 'auto 300px 300px 300px',
     gridRowGap: 100,
   },
   largeDataset: {
@@ -115,6 +115,33 @@ export const Main = () => {
         datasetChosen={datasetChosen}
         useCustomRange={useCustomRange}
       />
+      <DemoTimeline
+        timelineComponent={Timeline}
+        title={'Custom Layer'}
+        laneDisplayMode={laneDisplayMode}
+        suppressMarkAnimation={suppressMarkAnimation}
+        isTrimming={isTrimming}
+        enableClustering={enableClustering}
+        datasetChosen={datasetChosen}
+        useCustomRange={useCustomRange}
+        layers={[
+          'grid',
+          'axes',
+          ({ height, width, domain, maxDomain }) => {
+            const fontSize = 100 / ((domain[1] - domain[0]) / (maxDomain[1] - maxDomain[0]))
+
+            return (
+              <g>
+                <text x={width / 2} y={height / 2} fontSize={fontSize} textAnchor="middle" fill="#9e9e9e">
+                  Custom Layer
+                </text>
+              </g>
+            )
+          },
+          'marks',
+          'interaction',
+        ]}
+      />
     </div>
   )
 }
@@ -128,6 +155,7 @@ interface DemoTimelineProps {
   enableClustering: boolean
   datasetChosen: string
   useCustomRange: boolean
+  layers?: ReadonlyArray<TimelineLayer>
 }
 
 const DemoTimeline = ({
@@ -139,6 +167,7 @@ const DemoTimeline = ({
   enableClustering,
   datasetChosen,
   useCustomRange,
+  layers,
 }: DemoTimelineProps) => {
   const materialTheme = useTheme()
   const theme = createTimelineTheme(materialTheme.palette.mode, materialTheme)
@@ -238,6 +267,7 @@ const DemoTimeline = ({
             onInteractionEnd,
             enableEventClustering: enableClustering,
             customRange: useCustomRange ? [315529200000, 1640991600000] : undefined,
+            layers,
           }
           return React.createElement(timelineComponent, timelineProps)
         }}
