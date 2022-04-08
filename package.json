@@ -70,7 +70,7 @@
     "react-app-polyfill": "^1.0.0",
     "react-dom": "17.0.2",
     "react-redux": "7.2.6",
-    "react-svg-timeline": "file:.yalc/react-svg-timeline",
+    "react-svg-timeline": "0.20.0",
     "react-virtualized-auto-sizer": "^1.0.2",
     "tss-react": "^3.3.6"
   },

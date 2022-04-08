@@ -3513,11 +3513,6 @@
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
-"@types/d3-array@^2.9.0":
-  version "2.12.3"
-  resolved "https://registry.yarnpkg.com/@types/d3-array/-/d3-array-2.12.3.tgz#8d16d51fb04ad5a5a8ebe14eb8263a579f1efdd1"
-  integrity sha512-hN879HLPTVqZV3FQEXy7ptt083UXwguNbnxdTGzVW4y4KjX5uyNKljrQixZcSJfLyFirbpUokxpXtvR+N5+KIg==
-
 "@types/d3-time-format@2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@types/d3-time-format/-/d3-time-format-2.3.1.tgz#87a30e4513b9d1d53b920327a361f87255bf3372"
@@ -10759,10 +10754,11 @@ react-sizeme@^3.0.1:
     shallowequal "^1.1.0"
     throttle-debounce "^3.0.1"
 
-"react-svg-timeline@file:.yalc/react-svg-timeline":
+react-svg-timeline@0.20.0:
   version "0.20.0"
+  resolved "https://registry.yarnpkg.com/react-svg-timeline/-/react-svg-timeline-0.20.0.tgz#c3c5980a51cc6c1d0b03400abb17c6a9ca270fa0"
+  integrity sha512-QD2SeVOP2Kctac1Da6E96cvxmhOeg6ShkZW37X86e9mKj4B0MJJGtUSq/TzD/nGP0s2hbnPyA4ug+vihh2W0SA==
   dependencies:
-    "@types/d3-array" "^2.9.0"
     d3-array "^2.11.0"
     d3-scale "^3.0.1"
     date-fns "^2.2.1"
