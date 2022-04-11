@@ -10754,10 +10754,10 @@ react-sizeme@^3.0.1:
     shallowequal "^1.1.0"
     throttle-debounce "^3.0.1"
 
-react-svg-timeline@0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/react-svg-timeline/-/react-svg-timeline-0.20.0.tgz#c3c5980a51cc6c1d0b03400abb17c6a9ca270fa0"
-  integrity sha512-QD2SeVOP2Kctac1Da6E96cvxmhOeg6ShkZW37X86e9mKj4B0MJJGtUSq/TzD/nGP0s2hbnPyA4ug+vihh2W0SA==
+react-svg-timeline@0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/react-svg-timeline/-/react-svg-timeline-0.21.0.tgz#8b1667b6096ffed375a4d07944fae2dca8aa062d"
+  integrity sha512-O0P7r7ytpjLkjmRLNjt1sF1p/TtEo44rrhiA5LmzynwQ6zhYvkSPwlygk2Ly1KZKrOyDFHFVqLgf15pUvtry6A==
   dependencies:
     d3-array "^2.11.0"
     d3-scale "^3.0.1"
