@@ -9,7 +9,7 @@ import Dataset2 from '../data/largeDataset.json'
 import { Card, InputLabel, MenuItem, Select, Switch, Typography, useTheme } from '@mui/material'
 import { CustomizedTimeline } from '../../timeline/components/CustomizedTimeline'
 import { ExampleEvent, ExampleProps, TimelineEventId, TimelineLaneId } from '../../timeline/model'
-import { createTimelineTheme, LaneDisplayMode, Timeline, TimelineLayer, TimelineProps } from 'react-svg-timeline'
+import { deriveTimelineTheme, LaneDisplayMode, Timeline, TimelineLayer, TimelineProps } from 'react-svg-timeline'
 import { makeStyles } from '../../utils'
 import AutoSizer, { Size } from 'react-virtualized-auto-sizer'
 
@@ -170,7 +170,7 @@ const DemoTimeline = ({
   layers,
 }: DemoTimelineProps) => {
   const materialTheme = useTheme()
-  const theme = createTimelineTheme(materialTheme.palette.mode, materialTheme)
+  const theme = deriveTimelineTheme(materialTheme.palette.mode, materialTheme)
   const [selectedEvents, setSelectedEvents] = useState<ImmutableSet<TimelineEventId>>(ImmutableSet())
   const [pinnedEvents, setPinnedEvents] = useState<ImmutableSet<TimelineEventId>>(ImmutableSet())
   const [zoomRange, setZoomRange] = useState<[number, number]>()
