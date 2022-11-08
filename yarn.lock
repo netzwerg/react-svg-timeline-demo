@@ -10754,16 +10754,16 @@ react-sizeme@^3.0.1:
     shallowequal "^1.1.0"
     throttle-debounce "^3.0.1"
 
-react-svg-timeline@0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/react-svg-timeline/-/react-svg-timeline-0.22.0.tgz#92c4e9957977cbec19ccd08615054d147f350495"
-  integrity sha512-UIFxca3o329u+4EIguxtJ5xrdyF0Zp5CdtubY4hrTz+7vJ+XEeiOMpoWj28tg57gAfQ+oOt9l1LbiP6tez5Syw==
+react-svg-timeline@0.23.5:
+  version "0.23.5"
+  resolved "https://registry.yarnpkg.com/react-svg-timeline/-/react-svg-timeline-0.23.5.tgz#679319723924b5b521a1cf5e89132e0ffebb3567"
+  integrity sha512-ie0AHv+WdcNTJ4gK9StDCspF8AwOpjr7NYCeLnoJA3exfvJO7MfuDSLWPQy/WS+NNbup+iS+8mAXXXXo35qK+w==
   dependencies:
     d3-array "^2.11.0"
     d3-scale "^3.0.1"
     date-fns "^2.2.1"
     react-svg-tooltip "^0.0.11"
-    ts-deepmerge "^1.0.7"
+    ts-deepmerge "^2.0.2"
 
 react-svg-tooltip@^0.0.11:
   version "0.0.11"
@@ -12215,10 +12215,10 @@ ts-dedent@^2.0.0:
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.1.1.tgz#6dd56870bb5493895171334fa5d7e929107e5bbc"
   integrity sha512-riHuwnzAUCfdIeTBNUq7+Yj+ANnrMXo/7+Z74dIdudS7ys2k8aSGMzpJRMFDF7CLwUTbtvi1ZZff/Wl+XxmqIA==
 
-ts-deepmerge@^1.0.7:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/ts-deepmerge/-/ts-deepmerge-1.1.0.tgz#4236ae102199affe2e77690dcf198a420160eef2"
-  integrity sha512-VvwaV/6RyYMwT9d8dClmfHIsG2PCdm6WY430QKOIbPRR50Y/1Q2ilp4i2XEZeHFcNqfaYnAQzpyUC6XA0AqqBg==
+ts-deepmerge@^2.0.2:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/ts-deepmerge/-/ts-deepmerge-2.0.7.tgz#36786a9a10b5f3a6f5154007cf17bfba7251e0a7"
+  integrity sha512-3phiGcxPSSR47RBubQxPoZ+pqXsEsozLo4G4AlSrsMKTFg9TA3l+3he5BqpUi9wiuDbaHWXH/amlzQ49uEdXtg==
 
 ts-essentials@^2.0.3:
   version "2.0.12"

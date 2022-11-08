@@ -5,17 +5,17 @@
   "homepage": "/react-svg-timeline-demo",
   "scripts": {
     "build": "tsc && vite build",
+    "build-storybook": "build-storybook",
+    "coverage": "vitest run --coverage",
     "lint": "eslint --max-warnings 0 './src/**/*.{ts,tsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+    "prepare": "husky install",
     "prepreview": "yarn build",
     "preview": "vite preview",
     "start": "vite",
-    "test": "vitest",
-    "test:ci": "CI=true vitest run",
-    "coverage": "vitest run --coverage",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "test": "vitest",
+    "test:ci": "CI=true vitest run"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
@@ -70,7 +70,7 @@
     "react-app-polyfill": "^1.0.0",
     "react-dom": "17.0.2",
     "react-redux": "7.2.6",
-    "react-svg-timeline": "0.22.0",
+    "react-svg-timeline": "0.23.5",
     "react-virtualized-auto-sizer": "^1.0.2",
     "tss-react": "^3.3.6"
   },
