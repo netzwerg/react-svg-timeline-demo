@@ -5840,6 +5840,13 @@ d3-array@2, d3-array@^2.11.0, d3-array@^2.3.0:
   dependencies:
     internmap "^1.0.0"
 
+"d3-array@2 - 3":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-3.2.0.tgz#15bf96cd9b7333e02eb8de8053d78962eafcff14"
+  integrity sha512-3yXFQo0oG3QCxbF06rMPFyGRMGJNS7NvsV1+2joOjbBE+9xvWQ8+GcMJAjRCzw06zQ3/arXeJgbPYcjUCuC+3g==
+  dependencies:
+    internmap "1 - 2"
+
 "d3-color@1 - 2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-2.0.0.tgz#8d625cab42ed9b8f601a1760a389f7ea9189d62e"
@@ -5893,6 +5900,13 @@ d3-time@1:
   integrity sha512-/eIQe/eR4kCQwq7yxi7z4c6qEXf2IYGcjoWB5OOQy4Tq9Uv39/947qlDcN2TLkiTzQWzvnsuYPB9TrWaNfipKQ==
   dependencies:
     d3-array "2"
+
+d3-time@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-3.0.0.tgz#65972cb98ae2d4954ef5c932e8704061335d4975"
+  integrity sha512-zmV3lRnlaLI08y9IMRXSDshQb5Nj77smnfpnd2LrBa/2K281Jijactokeak14QacHs/kKq0AQ121nidNYlarbQ==
+  dependencies:
+    d3-array "2 - 3"
 
 damerau-levenshtein@^1.0.7:
   version "1.0.8"
@@ -8164,6 +8178,11 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
+
+"internmap@1 - 2":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/internmap/-/internmap-2.0.3.tgz#6685f23755e43c524e251d29cbc97248e3061009"
+  integrity sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==
 
 internmap@^1.0.0:
   version "1.0.1"
@@ -10754,13 +10773,14 @@ react-sizeme@^3.0.1:
     shallowequal "^1.1.0"
     throttle-debounce "^3.0.1"
 
-react-svg-timeline@0.23.5:
-  version "0.23.5"
-  resolved "https://registry.yarnpkg.com/react-svg-timeline/-/react-svg-timeline-0.23.5.tgz#679319723924b5b521a1cf5e89132e0ffebb3567"
-  integrity sha512-ie0AHv+WdcNTJ4gK9StDCspF8AwOpjr7NYCeLnoJA3exfvJO7MfuDSLWPQy/WS+NNbup+iS+8mAXXXXo35qK+w==
+react-svg-timeline@0.23.6:
+  version "0.23.6"
+  resolved "https://registry.yarnpkg.com/react-svg-timeline/-/react-svg-timeline-0.23.6.tgz#da553764da5b6f4211bbbb0213e6f84e4743d208"
+  integrity sha512-bEQe9EyFkFUqwGJl+rT9/3an3WjukVBZ0SPbvCuYtyyMshk+xuA3AB40iACU8EigfXLu4MDVoSqEo+rQ29YA4g==
   dependencies:
     d3-array "^2.11.0"
     d3-scale "^3.0.1"
+    d3-time "^3.0.0"
     date-fns "^2.2.1"
     react-svg-tooltip "^0.0.11"
     ts-deepmerge "^2.0.2"
